@@ -82,7 +82,7 @@ void localTime()
 }
 
 void setup()
-{ tft.init(); tft.setRotation(1); tft.fillScreen(TFT_BLACK);
+{ tft.init(); tft.setRotation(1); tft.fillScreen(TFT_BLACK); tft.setTextColor(TFT_RED,TFT_BLACK);
   
   Serial.begin(9600);
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
